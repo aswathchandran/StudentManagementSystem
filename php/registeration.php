@@ -102,8 +102,8 @@
 							}
 							else
 							{
-								$encrypted_password=md5($password);
-								$query="insert into registeration values('$username','$firstname','$lastname','$dept','$email','$phonenumber','$encrypted_password')";	
+								//$encrypted_password=md5($password);
+								$query="insert into registeration values('$username','$firstname','$lastname','$dept','$email','$phonenumber','$password')";	
 								$query_run=mysqli_query($con,$query);
 								if($query_run)
 								{
