@@ -7,6 +7,7 @@
 <title>Registeration</title>
 
 <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 <style>
 @viewport
 {
@@ -36,7 +37,7 @@
 		<strong><label>LastName</label></strong>
 		<input type="text" class="inputvalue" placeholder="Type your name" name="lastname" required><br><br>
 		
-		<strong><label>LastName</label></strong> 
+		<strong><label>Department</label></strong> 
 			<select name="department" class="inputvalue" style="width:98%">
 				<option value="CSE">B.E.Computer Science and Engineering</option>
 				<option value="IT">B.Tech.Information Technology</option>
@@ -64,6 +65,7 @@
 		<button type="reset" id="reset_button">Reset</button>
 		<a href="../index.php"><input type="button" id="backtologin" href="../index.php" value="Back To Login"></a>
 	</form>
+	
         <?php
 			if(isset($_POST["submit-button"]))
 			{
@@ -102,7 +104,7 @@
 							}
 							else
 							{
-								//$encrypted_password=md5($password);
+								$encrypted_password=md5($password);
 								$query="insert into registeration values('$username','$firstname','$lastname','$dept','$email','$phonenumber','$password')";	
 								$query_run=mysqli_query($con,$query);
 								if($query_run)
@@ -125,5 +127,8 @@
 						
         ?>
 	</div>
+	<nav class="navbar bg-dark fixed-top">
+		<h2 style="color:white">Student Management System</h2>
+	</nav>
 </body>
 </html>

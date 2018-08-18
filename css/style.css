@@ -3,7 +3,7 @@
 	margin-top:20px;
 	margin-bottom:40px;
 	width:500px;
-	margin: 0 auto;
+	margin: 70px auto;
 	background:white;
 	padding:5px;
 	border-radius:15px;
@@ -28,7 +28,7 @@
 #login_button
 {
 	margin-top:20px;
-	margin-bottom:40px;
+	margin-bottom:30px;
 	background-color:#20bf6b;
 	padding:5px;
 	color:white;
@@ -40,7 +40,7 @@
 #registeration_button
 {
 	margin-top:20px;
-	margin-bottom:40px;
+	margin-bottom:30px;
 	background-color:#EA2027;
 	padding:5px;
 	color:white;
